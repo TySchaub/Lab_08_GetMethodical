@@ -1,8 +1,11 @@
 public class CtoFTableDisplay {
     public static void main(String[] args) {
 
-        for (int i = -100; i < 100; i++) {
-            System.out.println(CtoF(i));
+
+        System.out.printf("%7s | %10s%n", "Celsius", "Fahrenheit");
+
+        for (int i = -100; i <= 100; i++) {
+            System.out.printf("%7d | %10.2f%n", i, CtoF(i));
         }
     }
 
