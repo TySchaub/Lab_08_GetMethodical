@@ -8,31 +8,34 @@ public class DevTest {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-/*
+
         // Test getNonZeroLenString
-        String name = getNonZeroLenString(in, "Enter your name: ");
+ /*       String name = getNonZeroLenString(in, "Enter your name: ");
         System.out.println("Hello, " + name);
 
         // 2nd test for library
         name = SafeInput.getNonZeroLenString(in, "Enter your name: ");
         System.out.println("Hello, " + name);
 
+        int age = getInt(in, "Enter your age: ");
+        System.out.println("Your age is " + age);
+
         double salary = getDouble(in, "Enter your salary: ");
         System.out.println("Your salary is " + salary);
 
-
         int favNum = getRangedInt(in, "Enter a number between 1 and 100: ", 1, 100);
         System.out.println("Your favorite number is " + favNum);
-
 
         double price = SafeInput.getRangedDouble(in, "Enter a price between 5.00 and 10.00: ", 5.00, 10.00);
         System.out.println("The price is " + price);
 
         boolean confirm = SafeInput.getYNConfirm(in, "Are you sure you want to quit?");
         System.out.println("You said " + confirm);
-*/
+
         String email = SafeInput.getRegExString(in, "Enter your email address ", "^[u\\w.]+@[\\w.]+$");
         System.out.println("Your email is " + email);
+*/
+
     }
     // Method Definitions go here
 
