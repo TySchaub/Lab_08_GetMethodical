@@ -211,4 +211,31 @@ public class SafeInput
         } while (!done);
         return retString;
     }
+
+    public static void prettyHeader(String msg)
+    {
+        int prettyMid = 30 -1 - msg.length();
+
+        for (int i = 0; i < 60; i++)
+        {
+            System.out.print("*");
+        }
+        System.out.println();
+        System.out.print("***");
+        for (int i = 0; i < prettyMid; i++)
+        {
+            System.out.print(" ");
+        }
+        System.out.print(msg);
+        for (int i = 0; i < prettyMid; i++) {
+            System.out.print(" ");
+        }
+        System.out.print("***");
+        System.out.println();
+
+        for (int i = 0; i < 60; i++)
+        {
+            System.out.print("*");
+        }
+    }
 }
